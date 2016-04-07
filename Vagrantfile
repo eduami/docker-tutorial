@@ -13,8 +13,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :dockermachine, primary: true do |dockermachine_config|
 
     dockermachine_config.vm.hostname = 'dockermachine'
-    dockermachine_config.vm.network :forwarded_port, guest: 8080, host: 28080
-    dockermachine_config.vm.network :forwarded_port, guest: 80, host: 28081
+    # dockermachine_config.vm.network :forwarded_port, guest: 8080, host: 28080
+    # dockermachine_config.vm.network :forwarded_port, guest: 80, host: 28081
 
     dockermachine_config.vm.network :private_network, ip: "172.28.33.101"
     dockermachine_config.vm.provision :shell, :path => "dockermachine-setup.sh"
