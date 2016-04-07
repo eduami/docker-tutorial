@@ -6,3 +6,7 @@ Please install the below mentioned software components
   - Download Virtualbox from https://www.virtualbox.org/wiki/Downloads
 - Vagrant
   - Download Vagrant from https://www.vagrantup.com/downloads.html  
+## Setup
+Clone the Docker tutorial repo
+
+  git clone https://github.com/eduami/docker-tutorial.git
